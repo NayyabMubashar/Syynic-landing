@@ -24,7 +24,7 @@ export default function Solutioncard() {
       </div>
 
       <div className="bg-gray-900/50 rounded-lg p-3 flex flex-col lg:p-6 h-70 w-72 md:h-86 md:w-94 border-2 border-gray-400 shadow-sm hover:translate-2 hover:scale-110 hover:bg-[#1D2126] transition delay-50 duration-300 shadow-indigo-500">
-        <div className="w-8 h-8 lg:w-16 lg:h-16  rounded-xl bg-indigo-900/40 items-center justify-center mb-5">
+        <div className="w-8 h-8 lg:w-16 lg:h-16  rounded-xl bg-indigo-900/40 flex items-center justify-center mb-5">
           <MdPersonAddAlt size={40} className="text-indigo-500" />
         </div>
 
@@ -43,7 +43,7 @@ export default function Solutioncard() {
       </div>
 
       <div className="bg-gray-900/50 rounded-lg p-3 flex  flex-col lg:p-6 h-70 w-72 md:h-86 md:w-94 border-2 border-gray-400 shadow-sm shadow-indigo-500 hover:translate-2 hover:scale-110 hover:bg-[#1D2126] transition delay-50 duration-300">
-        <div className="w-8 h-8 lg:w-16 lg:h-16 rounded-xl bg-indigo-900/40  items-center justify-center mb-5">
+        <div className="w-8 h-8 lg:w-16 lg:h-16 rounded-xl bg-indigo-900/40 flex  items-center justify-center mb-5">
           <BsBuildings size={40} className="text-indigo-500" />
         </div>
         <h2 className="text-white text-2xl  lg:text-4xl font-semibold mb-4">
@@ -61,7 +61,7 @@ export default function Solutioncard() {
       </div>
 
       <div className="bg-gray-900/50 hover: rounded-lg  p-3 flex flex-col lg:p-6 h-70 w-72 md:h-86 md:w-94 border-2 border-gray-400 shadow-sm shadow-indigo-500 hover:translate-2 hover:scale-110 hover:bg-[#1D2126] transition delay-50 duration-300">
-        <div className="w-8 h-8 lg:w-16 lg:h-16 rounded-xl bg-indigo-900/40  items-center justify-center mb-5">
+        <div className="w-8 h-8 lg:w-16 lg:h-16 rounded-xl bg-indigo-900/40 flex items-center justify-center mb-5">
           <LuBrain size={40} className="text-indigo-500" />
         </div>
 
