@@ -90,14 +90,14 @@ export default function Enterprise(){
             </h1>
           </div>
           {/* cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 lg:gap-6 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 lg:gap-6 mt-8 ">
             {enterpriseFeatures.map((feature) => {
               const Icon = feature.icon;
 
               return (
                 <div
                   key={feature.title}
-                  className="bg-gray-900/50 border border-indigo-900/50 rounded-xl p-2 md:p-4 lg:p-6"
+                  className="bg-gray-900/50 border border-indigo-900/50 rounded-xl p-2 md:p-4 lg:p-6 shadow-sm shadow-indigo-500 hover:translate-2 hover:scale-110 hover:bg-[#1D2126] transition delay-50 duration-300"
                 >
                   <Icon size={35} className="text-indigo-500 mb-2 md:mb-5" />
 
