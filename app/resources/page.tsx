@@ -65,25 +65,25 @@ export default function Resources(){
 
             {/* buttons */}
             <div className="flex flex-wrap gap-2 md:gap-4 mt-2 md:mt-8">
-              <button className="text-white border-2 border-indigo-500 px-4 py-2 rounded-3xl">
+              <button className="text-white border-2 border-indigo-500 shadow-lg hover:shadow-indigo-400 hover:border-indigo-700 px-4 py-2 rounded-3xl">
                 All Resources
               </button>
-              <button className="text-white border-2 border-indigo-500 px-4 py-2 rounded-3xl">
+              <button className="text-white border-2 border-indigo-500 shadow-lg hover:shadow-indigo-400 hover:border-indigo-700 px-4 py-2 rounded-3xl">
                 Guides
               </button>
-              <button className="text-white border-2 border-indigo-500 px-4 py-2 rounded-3xl">
+              <button className="text-white border-2 border-indigo-500 shadow-lg hover:shadow-indigo-400 hover:border-indigo-700 px-4 py-2 rounded-3xl">
                 Blogs
               </button>
-              <button className="text-white border-2 border-indigo-500 px-4 py-2 rounded-3xl">
+              <button className="text-white border-2 border-indigo-500 shadow-lg hover:shadow-indigo-400 hover:border-indigo-700 px-4 py-2 rounded-3xl">
                 Webinars
               </button>
-              <button className="text-white border-2 border-indigo-500 px-4 py-2 rounded-3xl">
+              <button className="text-white border-2 border-indigo-500 shadow-lg hover:shadow-indigo-400 hover:border-indigo-700 px-4 py-2 rounded-3xl">
                 Videos
               </button>
-              <button className="text-white border-2 border-indigo-500 px-4 py-2 rounded-3xl">
+              <button className="text-white border-2 border-indigo-500 shadow-lg hover:shadow-indigo-400 hover:border-indigo-700 px-4 py-2 rounded-3xl">
                 Templates
               </button>
-              <button className="text-white border-2 border-indigo-500 px-4 py-2 rounded-3xl">
+              <button className="text-white border-2 border-indigo-500 shadow-lg hover:shadow-indigo-400 hover:border-indigo-700 px-4 py-2 rounded-3xl">
                 Case Studies
               </button>
             </div>
@@ -100,7 +100,7 @@ export default function Resources(){
                     <h1 className="text-white text-xl md:text-2xl">
                       {resource.title}
                     </h1>
-                    <button className="text-indigo-500 text-sm md:text-lg  flex items-center gap-2">
+                    <button className="text-indigo-500 text-sm md:text-lg cursor-pointer flex items-center gap-2">
                       {resource.action}
                       <AiOutlineArrowRight size={24} />
                     </button>

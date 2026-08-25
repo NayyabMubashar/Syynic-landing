@@ -5,8 +5,8 @@ export default function Pricing(){
     return (
       <>
         
-        <div id="pricing" className="min-h-screen bg-[#1D2126] ">
-          <div className="flex flex-col items-center justify-center">
+        <div id="pricing" className="min-h-screen bg-[#1D2126] mt-20 ">
+          <div className="hero-heading flex flex-col items-center justify-center">
             <h1 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold">Choose the Plan</h1>
             <span className="text-indigo-500 text-2xl md:text-4xl lg:text-6xl font-bold">
               That Fits your Team
