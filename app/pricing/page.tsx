@@ -1,19 +1,40 @@
+"use client"
+import {motion} from "motion/react";
 import Header from "../Header/Header";
 import PricingCard from "./pricingcard";
 
 export default function Pricing(){
     return (
       <>
-        
-        <div id="pricing" className="min-h-screen bg-[#1D2126] mt-20 ">
-          <div className="hero-heading flex flex-col items-center justify-center">
-            <h1 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold">Choose the Plan</h1>
-            <span className="text-indigo-500 text-2xl md:text-4xl lg:text-6xl font-bold">
+        <div id="pricing" className="min-h-screen bg-synniq-bg ">
+          <div className="flex flex-col items-center justify-center">
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.3, delay: 0.5 }}
+              className="text-syynic-navy text-3xl md:text-4xl lg:text-6xl font-bold"
+            >
+              Choose the Plan
+            </motion.h1>
+            <motion.span
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.3, delay: 0.6 }}
+              className="text-synniq-blue text-2xl md:text-4xl lg:text-6xl font-bold"
+            >
               That Fits your Team
-            </span>
-            <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mt-4">
+            </motion.span>
+            <motion.p
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.3, delay: 0.9 }}
+              className="text-xl md:text-2xl lg:text-3xl text-gray-800 mt-4"
+            >
               Powerful tools for individals,growing teams and large organization
-            </p>
+            </motion.p>
           </div>
           <PricingCard />
         </div>

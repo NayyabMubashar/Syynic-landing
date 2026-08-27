@@ -23,7 +23,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 flex justify-between items-center backdrop-blur-lg bg-transparent text-white px-3 py-3 md:px-6 md:py-8">
+    <header className="sticky top-0 z-50 flex justify-between items-center backdrop-blur-lg  bg-syynic-navy/60 text-white px-3 py-3 md:px-6 md:py-8">
       {/* Logo */}
       <div className="flex gap-2 items-center px-2 md:px-6">
         <img
@@ -47,8 +47,8 @@ export default function Header() {
                   href={link.href}
                   className={`transition-colors duration-200 ${
                     isActive
-                      ? "text-blue-400 font-semibold"
-                      : "text-white hover:text-blue-300"
+                      ? "text-synniq-blue font-semibold"
+                      : "text-white hover:text-synniq-blue"
                   }`}
                 >
                   {link.name}

@@ -6,8 +6,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-synniq-bg: #080d19;
-  --color-synniq-blue: #adc37d;
+  --color-synniq-bg: #ffff;
+  --color-synniq-green: #a9c12a;
+  --color-synniq-blue:#FC7004;
+  --color-syynic-navy:#082038;
+
   --color-synniq-cyan: #22d3ee;
   
  
@@ -17,6 +20,7 @@
   from {
     opacity: 0;
     transform: translateY(30px);
+  
   }
 
   to {
@@ -26,7 +30,7 @@
 }
 
 .hero-heading {
-  animation: fadeUp 0.8s ease-out;
+  animation: fadeUp 1s ease-out;
 }
 
 @theme inline {

@@ -1,6 +1,7 @@
+"use client"
 import { MdGroups, MdPropaneTank,MdBusiness } from "react-icons/md";
 import { TiTickOutline } from "react-icons/ti";
-
+import {motion} from "motion/react";
 export default function PricingCard() {
     
 
@@ -50,18 +51,24 @@ export default function PricingCard() {
    
   return (
     <>
-      <div className="mt-8  flex  flex-wrap gap-4 md:gap-9 lg:gap-12 items-center justify-center">
+      <motion.div initial={{opacity:0,y:40}}
+       whileInView={{ opacity: 1, y: 0 }}
+         viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.3, delay: 1 }}
+      
+      
+      className="hero-heading mt-8  flex  flex-wrap gap-4 md:gap-9 lg:gap-12 items-center justify-center">
         {pricingPlans.map((plan) => {
               const Icon = plan.icon;
               return (
                 // Cards
                 <div
                   key={plan.name}
-                  className="h-auto w-70 md:h-110 md:w-100 bg-gray-900 p-3 md:p-6 border-2 shadow-sm shadow-indigo-500 rounded-lg border-gray-400 hover:translate-2 hover:scale-110 hover:bg-[#1D2126] transition delay-50 duration-300"
+                  className="h-auto w-70 md:h-110 md:w-100 bg-syynic-navy p-3 md:p-6 border-2 shadow-sm shadow-sytext-synniq-blue rounded-lg border-gray-400 hover:translate-2 hover:scale-110 hover:bg-[#1D2126] transition delay-50 duration-300"
                 >
                   <div className="flex  gap-3">
-                    <div className="w-8 h-8 md:w-12 md:h-12 lg:w-12 lg:h-12  rounded-xl bg-indigo-900/40 flex items-center justify-center mb-5">
-                      <Icon size={40} className="text-indigo-500" />
+                    <div className="w-8 h-8 md:w-12 md:h-12 lg:w-12 lg:h-12  rounded-xl bg-synniq-bg/10 flex items-center justify-center mb-5">
+                      <Icon size={35} className="text-synniq-blue" />
                     </div>
                     <div>
                       <h4 className="text-white text-xl md:text-2xl lg:text-3xl">{plan.name}</h4>
@@ -77,7 +84,7 @@ export default function PricingCard() {
                     </h1>
                     <p className="text-xl text-gray-400 py-2 md:py-4">/month</p>
                   </div>
-                  <button className="md:text-xl text-sm border-2 shadow-md w-full py-2 border-gray-400 text-indigo-500">
+                  <button className="md:text-xl text-sm border-2 shadow-md w-full py-2 border-gray-400 text-synniq-blue">
                     {plan.buttontext}
                   </button>
                   <hr className="text-gray-800 mt-4" />
@@ -88,10 +95,10 @@ export default function PricingCard() {
                       className="text-xl text-gray-400 flex flex-col  mt-2 gap-2"
                     >
                       <div className="flex gap-2">
-                        <div className="w-4 h-4 md:w-6 md:h-6 rounded-xl bg-indigo-900/40 flex items-center justify-center mt-2">
+                        <div className="w-4 h-4 md:w-6 md:h-6 rounded-xl bg-synniq-bg/10 flex items-center justify-center mt-2">
                           <TiTickOutline
                             size={50}
-                            className="text-indigo-500"
+                            className="text-synniq-blue"
                           />
                         </div>
                         <p className="mt-2 tex-xs md:text-sm">{feature}</p>
@@ -101,7 +108,7 @@ export default function PricingCard() {
                 </div>
               );
         })}
-      </div>
+      </motion.div>
     </>
   );
 }
