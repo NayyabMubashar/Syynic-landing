@@ -1,5 +1,13 @@
-import Header from "../Header/Header";
-
+"use client"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import {motion} from "motion/react";
 import { CiLock, CiHeadphones } from "react-icons/ci";
 import { AiOutlineSafetyCertificate, } from "react-icons/ai";
 import {
@@ -49,68 +57,115 @@ const enterpriseFeatures = [
 export default function Enterprise(){
     return (
       <>
-        <div id="enterprise" className="min-h-screen bg-[#1D2126] ">
+        <div id="enterprise" className="min-h-screen bg-synniq-bg ">
           {/* Heading */}
           <div className=" p-18 border-b-2 border-gray-800 flex flex-col justify-center items-center">
-            <h1 className="text-2xl md:text-4xl lg:text-6xl text-white">
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.3, delay: 0.5 }}
+              className="text-2xl md:text-4xl lg:text-6xl text-syynic-navy"
+            >
               Power your Organization <br />
-              with <span className="text-indigo-600">Synnic Enterprise</span>
-            </h1>
-            <p className="text-gray-300 text-xl md:text-2xl mt-3 md:mt-6">
+              with <span className="text-synniq-blue">Synnic Enterprise</span>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.3, delay: 0.6 }}
+              className="text-gray-800 text-xl md:text-2xl mt-3 md:mt-6"
+            >
               Advanced security,unlimited scale,and dedicated support
               <br /> to help your organization move faster and achieve more.
-            </p>
-            <div className="flex gap-3 md:gap-6 mt-3 md:mt-6 rounded-md">
-              <button className="px-2 md:px-4 py-2 md:py-3 bg-indigo-600 shadow-md rounded-md  text-white font-bold">
+            </motion.p>
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.9 }}
+              className="flex gap-3 md:gap-6 mt-3 md:mt-6 rounded-md"
+            >
+              <button className="px-2 md:px-4 py-2 md:py-3 bg-synniq-blue shadow-md rounded-md transform hover:scale-120 ease-in-out duration-200  text-white font-bold">
                 Contact Sales
               </button>
-              <button className="px-2 md:px-4 py-2 md:py-3 bg-transparent shadow-md  rounded-md border-2 border-gray-300 text-white font-bold">
+              <button className="px-2 md:px-4 py-2 md:py-3 bg-syynic-navy shadow-md  rounded-md border-2 border-gray-300 transform hover:scale-120 ease-in-out duration-200  hover:bg-gray-900 text-white font-bold">
                 Schedule a Demo
               </button>
-            </div>
+            </motion.div>
             {/* buttons */}
-            <div className="flex flex-wrap mt-3 md:mt-5 lg:mt-8 gap-2 md:gap-4 lg:gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.3, delay: 1 }}
+              className="flex flex-wrap mt-3 md:mt-5 lg:mt-8 gap-2 md:gap-4 lg:gap-6"
+            >
               <div className="flex gap-2">
-                <CiLock className="text-indigo-600 text-xl md:text-2xl" />
-                <h2 className="text-xl text-gray-400">Enterprise Security</h2>
+                <CiLock className="text-synniq-blue text-xl md:text-2xl" />
+                <h2 className="text-xl text-gray-600">Enterprise Security</h2>
               </div>
               <div className="flex gap-2">
-                <AiOutlineSafetyCertificate className="text-indigo-600 text-xl md:text-2xl" />
-                <h2 className="text-xl text-gray-400">99.99% Uptime</h2>
+                <AiOutlineSafetyCertificate className="text-synniq-blue text-xl md:text-2xl" />
+                <h2 className="text-xl text-gray-600">99.99% Uptime</h2>
               </div>
               <div className="flex gap-2">
-                <CiHeadphones className="text-indigo-600 text-xl md:text-2xl" />
-                <h2 className="text-xl text-gray-400">Deidcated Support</h2>
+                <CiHeadphones className="text-synniq-blue text-xl md:text-2xl" />
+                <h2 className="text-xl text-gray-600">Deidcated Support</h2>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className="flex items-center justify-center mt-6">
-            <h1 className="text-white text-xl md:text-2xl lg:text-3xl">
+            <h1 className="text-syynic-navy text-2xl md:text-3xl lg:text-4xl">
               Everything you need to scale securely
             </h1>
           </div>
           {/* cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 lg:gap-6 mt-8 ">
-            {enterpriseFeatures.map((feature) => {
-              const Icon = feature.icon;
 
-              return (
-                <div
-                  key={feature.title}
-                  className="bg-gray-900/50 border border-indigo-900/50 rounded-xl p-2 md:p-4 lg:p-6 shadow-sm shadow-indigo-500 hover:translate-2 hover:scale-110 hover:bg-[#1D2126] transition delay-50 duration-300"
-                >
-                  <Icon size={35} className="text-indigo-500 mb-2 md:mb-5" />
+          <div className="flex justify-center mt-8 ">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 2000,
+                }),
+              ]}
+              className="w-full max-w-6xl"
+            >
+              <CarouselContent className="ml-4">
+                {enterpriseFeatures.map((feature) => {
+                  const Icon = feature.icon;
 
-                  <h3 className="text-white text-lg md:text-xl font-semibold mb-3">
-                    {feature.title}
-                  </h3>
+                  return (
+                    <CarouselItem
+                      key={feature.title}
+                      className=" basis-full sm:basis-1/2 lg:basis-1/3"
+                    >
+                      <div className="bg-syynic-navy border h-full border-indigo-900/50 rounded-xl p-2 md:p-4 lg:p-6 shadow-sm shadow-indigo-500 hover:translate-3 hover:bg-[#1D2126] transition delay-50 duration-300">
+                        <Icon
+                          size={35}
+                          className="text-synniq-blue mb-2 md:mb-5"
+                        />
 
-                  <p className="text-gray-400 text-base leading-6">
-                    {feature.description}
-                  </p>
-                </div>
-              );
-            })}
+                        <h3 className="text-white text-lg md:text-xl font-semibold mb-3">
+                          {feature.title}
+                        </h3>
+
+                        <p className="text-gray-300 text-base leading-6">
+                          {feature.description}
+                        </p>
+                      </div>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+
+              <CarouselPrevious className="left-0 md:-left-12 bg-syynic-navy/20" />
+              <CarouselNext className="right-0 md:-right-12 bg-syynic-navy/20" />
+            </Carousel>
           </div>
         </div>
       </>

@@ -23,7 +23,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="relative flex justify-between items-center bg-[#080d19] text-white px-3 py-4 md:px-6 md:py-8">
+    <header className="sticky top-0 z-50 flex justify-between items-center backdrop-blur-lg  bg-syynic-navy/60 text-white px-3 py-3 md:px-6 md:py-8">
       {/* Logo */}
       <div className="flex gap-2 items-center px-2 md:px-6">
         <img
@@ -32,12 +32,12 @@ export default function Header() {
           className="h-10 w-10 md:h-16 md:w-16 rounded-xl"
         />
 
-        <h1 className="text-2xl font-bold">Synnic</h1>
+        <h1 className="text-2xl md:text-3xl  font-bold">Synnic</h1>
       </div>
 
       {/* Desktop Nav */}
       <div className="hidden lg:flex items-center px-8">
-        <ul className="flex gap-12 text-xl">
+        <ul className="flex gap-12 text-xl md:text-2xl">
           {NavLinks.map((link) => {
             const isActive = pathname === link.href;
 
@@ -47,8 +47,8 @@ export default function Header() {
                   href={link.href}
                   className={`transition-colors duration-200 ${
                     isActive
-                      ? "text-blue-400 font-semibold"
-                      : "text-white hover:text-blue-300"
+                      ? "text-synniq-blue font-semibold"
+                      : "text-white hover:text-synniq-blue"
                   }`}
                 >
                   {link.name}

@@ -24,7 +24,7 @@ const socialIcons = [FaLinkedinIn, FaTwitter, FaFacebookF, FaYoutube];
 
 export default function Footer() {
   return (
-    <footer className="bg-[#080d19] text-white px-8 md:px-16 pt-8 md:pt-16 pb-6">
+    <footer className="bg-syynic-navy  text-white px-8 md:px-16 pt-8 md:pt-16 pb-6">
       {/* Main Footer */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
     
@@ -51,7 +51,7 @@ export default function Footer() {
                 <a
                   key={link}
                   href="#"
-                  className="text-gray-400 hover:text-indigo-400 transition"
+                  className="text-gray-400 hover:text-synniq-blue transition"
                 >
                   {link}
                 </a>
@@ -69,7 +69,7 @@ export default function Footer() {
               <a
                 key={index}
                 href="#"
-                className="w-9 h-9 md:w-11 md:h-11 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition"
+                className="w-9 h-9 md:w-11 md:h-11 rounded-full bg-gray-800 flex items-center justify-center hover:bg-synniq-blue transition"
               >
                 <Icon size={18} />
               </a>
