@@ -64,11 +64,11 @@ export default function PricingCard() {
                 // Cards
                 <div
                   key={plan.name}
-                  className="h-auto w-70 md:h-110 md:w-100 bg-syynic-navy p-3 md:p-6 border-2 shadow-sm shadow-sytext-synniq-blue rounded-lg border-gray-400 hover:translate-2 hover:scale-110 hover:bg-[#1D2126] transition delay-50 duration-300"
+                  className="h-auto w-70 md:h-110 md:w-100 bg-syynic-secondary p-3 md:p-6 border-2 shadow-sm rounded-4xl border-gray-400 hover:translate-2 hover:scale-110  transition delay-50 duration-300"
                 >
                   <div className="flex  gap-3">
                     <div className="w-8 h-8 md:w-12 md:h-12 lg:w-12 lg:h-12  rounded-xl bg-synniq-bg/10 flex items-center justify-center mb-5">
-                      <Icon size={35} className="text-synniq-blue" />
+                      <Icon size={35} className="text-synniq-primary" />
                     </div>
                     <div>
                       <h4 className="text-white text-xl md:text-2xl lg:text-3xl">{plan.name}</h4>
@@ -84,7 +84,7 @@ export default function PricingCard() {
                     </h1>
                     <p className="text-xl text-gray-400 py-2 md:py-4">/month</p>
                   </div>
-                  <button className="md:text-xl text-sm border-2 shadow-md w-full py-2 border-gray-400 text-synniq-blue">
+                  <button className="md:text-xl text-sm border-2 shadow-md w-full py-2 border-gray-400 text-synniq-primary">
                     {plan.buttontext}
                   </button>
                   <hr className="text-gray-800 mt-4" />
@@ -98,7 +98,7 @@ export default function PricingCard() {
                         <div className="w-4 h-4 md:w-6 md:h-6 rounded-xl bg-synniq-bg/10 flex items-center justify-center mt-2">
                           <TiTickOutline
                             size={50}
-                            className="text-synniq-blue"
+                            className="text-synniq-primary"
                           />
                         </div>
                         <p className="mt-2 tex-xs md:text-sm">{feature}</p>

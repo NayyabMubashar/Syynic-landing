@@ -15,9 +15,9 @@ export default function Solutioncard() {
       transition={{ duration: 0.3, delay: 1.2 }}
       className="flex flex-wrap justify-center items-center gap-8 mt-10"
     >
-      <div className="bg-syynic-navy flex flex-col rounded-lg p-3 lg:p-6 h-70 w-72 md:h-86 md:w-94 border-2 border-gray-400 shadow-sm shadow-synntext-synniq-blue hover:translate-2 hover:scale-110 hover:bg-[#1D2126] transition delay-50 duration-300">
+      <div className="bg-syynic-secondary flex flex-col rounded-4xl p-3 lg:p-6 h-70 w-72 md:h-86 md:w-94 border-2 border-gray-400 shadow-sm shadow-synntext-synniq-primary hover:translate-2 hover:scale-110  transition delay-50 duration-300">
         <div className=" w-8 h-8 lg:w-16 lg:h-16 rounded-xl bg-synniq-bg/10 flex items-center justify-center mb-5">
-          <GoRocket size={40} className="text-synniq-blue" />
+          <GoRocket size={40} className="text-synniq-primary" />
         </div>
         <h2 className="text-white text-xl lg:text-3xl font-semibold mb-2 lg:mb-4">
           Startups & Small Teams
@@ -26,18 +26,18 @@ export default function Solutioncard() {
           Move faster with one workspace for communication, projects, tasks, and
           documents.
         </p>
-        <button className="text-synniq-blue text-sm lg:text-lg mt-auto flex items-center gap-2">
+        <button className="text-synniq-primary text-sm lg:text-lg mt-auto flex items-center gap-2">
           Explore for Startups
           <AiOutlineArrowRight size={24} />
         </button>
       </div>
 
-      <div className="bg-syynic-navy rounded-lg p-3 flex flex-col lg:p-6 h-70 w-72 md:h-86 md:w-94 border-2 border-gray-400 shadow-sm hover:translate-2 hover:scale-110 hover:bg-[#1D2126] transition delay-50 duration-300 shadow-synntext-synniq-blue">
+      <div className="bg-syynic-secondary rounded-4xl p-3 flex flex-col lg:p-6 h-70 w-72 md:h-86 md:w-94 border-2 border-gray-400 shadow-sm hover:translate-2 hover:scale-110  transition delay-50 duration-300 shadow-synntext-synniq-primary">
         <div className="w-8 h-8 lg:w-16 lg:h-16  rounded-xl  bg-synniq-bg/10 flex items-center justify-center mb-5">
-          <MdPersonAddAlt size={40} className="text-synniq-blue" />
+          <MdPersonAddAlt size={40} className="text-synniq-primary" />
         </div>
 
-        <h2 className="text-white text-2xl lg:text-4xl font-semibold mb-4">
+        <h2 className="text-white text-4xl lg:text-4xl font-semibold mb-4">
           Growing Teams
         </h2>
         <p className="text-gray-300 text-sm lg:text-lg text-center">
@@ -45,17 +45,17 @@ export default function Solutioncard() {
           collaboration simple as your team grows.
         </p>
 
-        <button className="text-synniq-blue text-sm lg:text-lg mt-auto flex gap-2">
+        <button className="text-synniq-primary text-sm lg:text-lg mt-auto flex gap-2">
           Explore for Startups
           <AiOutlineArrowRight size={24} />
         </button>
       </div>
 
-      <div className="bg-syynic-navy rounded-lg p-3 flex  flex-col lg:p-6 h-70 w-72 md:h-86 md:w-94 border-2 border-gray-400 shadow-sm shadow-synntext-synniq-blue hover:translate-2 hover:scale-110 hover:bg-[#1D2126] transition delay-50 duration-300">
+      <div className="bg-syynic-secondary rounded-4xl p-3 flex  flex-col lg:p-6 h-70 w-72 md:h-86 md:w-94 border-2 border-gray-400 shadow-sm shadow-synntext-synniq-primary hover:translate-2 hover:scale-110  transition delay-50 duration-300">
         <div className="w-8 h-8 lg:w-16 lg:h-16 rounded-xl  bg-synniq-bg/10 flex  items-center justify-center mb-5">
-          <BsBuildings size={40} className="text-synniq-blue" />
+          <BsBuildings size={40} className="text-synniq-primary" />
         </div>
-        <h2 className="text-white text-2xl  lg:text-4xl font-semibold mb-4">
+        <h2 className="text-white text-4xl  lg:text-4xl font-semibold mb-4">
           Enterprise
         </h2>
         <p className="text-gray-300 text-sm lg:text-lg text-center">
@@ -63,15 +63,15 @@ export default function Solutioncard() {
           workflows, and productivity at scale.
         </p>
 
-        <button className="text-synniq-blue text-sm lg:text-lg mt-auto flex gap-2">
+        <button className="text-synniq-primary text-sm lg:text-lg mt-auto flex gap-2">
           Explore for Startups
           <AiOutlineArrowRight size={24} />
         </button>
       </div>
 
-      <div className="bg-syynic-navy hover: rounded-lg  p-3 flex flex-col lg:p-6 h-70 w-72 md:h-86 md:w-94 border-2 border-gray-400 shadow-sm shadow-synntext-synniq-blue hover:translate-2 hover:scale-110 hover:bg-[#1D2126] transition delay-50 duration-300">
+      <div className="bg-syynic-secondary rounded-4xl  p-3 flex flex-col lg:p-6 h-70 w-72 md:h-86 md:w-94 border-2 border-gray-400 shadow-sm shadow-synntext-synniq-primary hover:translate-2 hover:scale-110  transition delay-50 duration-300">
         <div className="w-8 h-8 lg:w-16 lg:h-16 rounded-xl  bg-synniq-bg/10 flex items-center justify-center mb-5">
-          <LuBrain size={40} className="text-synniq-blue" />
+          <LuBrain size={40} className="text-synniq-primary" />
         </div>
 
         <h2 className="text-white text-2xl lg:text-4xl font-semibold mb-4">
@@ -82,7 +82,7 @@ export default function Solutioncard() {
           action with AI.
         </p>
 
-        <button className="text-synniq-blue text-sm lg:text-lg mt-auto flex items-center gap-2">
+        <button className="text-synniq-primary text-sm lg:text-lg mt-auto flex items-center gap-2">
           Explore for Startups
           <AiOutlineArrowRight size={24} />
         </button>

@@ -13,7 +13,7 @@ import Hero from "./Hero/page";
 export default function Home() {
   return (
     <>
-      <div className="font-display min-h-screen backdrop-blur-lg bg-[#082038]">
+      <div className="font-display min-h-screen bg-syynic-navy/90">
         <Header />
 
         <Hero />
