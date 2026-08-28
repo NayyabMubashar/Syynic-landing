@@ -61,7 +61,7 @@ export default function Resources(){
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.3, delay: 0.5 }}
-              className="text-syynic-navy text-2xl md:text-4xl lg:text-6xl font-bold "
+              className="text-syynic-secondabg-syynic-secondary text-2xl md:text-4xl lg:text-6xl font-bold "
             >
               Learn Grow and stay ahead
             </motion.h1>
@@ -70,7 +70,7 @@ export default function Resources(){
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.3, delay: 0.6 }}
-              className="text-synniq-blue text-2xl md:text-4xl lg:text-6xl font-bold"
+              className="text-synniq-primary text-2xl md:text-4xl lg:text-6xl font-bold"
             >
               With export resources
             </motion.span>
@@ -93,25 +93,25 @@ export default function Resources(){
               transition={{ duration: 0.3, delay: 1 }}
               className="flex flex-wrap gap-2 md:gap-4 mt-2 md:mt-8"
             >
-              <button className="text-syynic-navy border-2  shadow-lg  border-blue-950 hover:shadow-syynic-navy px-4 py-2 rounded-3xl">
+              <button className="text-syynic-secondary border-2  shadow-lg  border-blue-950  hover:shadow-blue-950  px-4 py-2 rounded-3xl">
                 All Resources
               </button>
-              <button className="text-syynic-navy border-2  shadow-lg border-blue-950 hover:shadow-syynic-navy px-4 py-2 rounded-3xl">
+              <button className="text-syynic-secondary border-2  shadow-lg border-blue-950 hover:shadow-blue-950 px-4 py-2 rounded-3xl">
                 Guides
               </button>
-              <button className="text-syynic-navy border-2  shadow-lg  border-blue-950 hover:shadow-syynic-navy px-4 py-2 rounded-3xl">
+              <button className="text-syynic-secondary border-2  shadow-lg  border-blue-950  hover:shadow-blue-950 px-4 py-2 rounded-3xl">
                 Blogs
               </button>
-              <button className="text-syynic-navy border-2  shadow-lg  border-blue-950 hover:shadow-syynic-navy px-4 py-2 rounded-3xl">
+              <button className="text-syynic-secondary border-2  shadow-lg  border-blue-950  hover:shadow-blue-950 px-4 py-2 rounded-3xl">
                 Webinars
               </button>
-              <button className="text-syynic-navy border-2  shadow-lg  border-blue-950 hover:shadow-syynic-navy px-4 py-2 rounded-3xl">
+              <button className="text-syynic-secondary border-2  shadow-lg  border-blue-950  hover:shadow-blue-950 px-4 py-2 rounded-3xl">
                 Videos
               </button>
-              <button className="text-syynic-navy border-2  shadow-lg  border-blue-950 hover:shadow-syynic-navy px-4 py-2 rounded-3xl">
+              <button className="text-syynic-secondary border-2  shadow-lg  border-blue-950  hover:shadow-blue-950 px-4 py-2 rounded-3xl">
                 Templates
               </button>
-              <button className="text-syynic-navy border-2  shadow-lg  border-blue-950 hover:shadow-syynic-navy px-4 py-2 rounded-3xl">
+              <button className="text-syynic-secondary border-2  shadow-lg  border-blue-950  hover:shadow-blue-950 px-4 py-2 rounded-3xl">
                 Case Studies
               </button>
             </motion.div>
@@ -127,18 +127,18 @@ export default function Resources(){
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.3, delay: 1 }}
                   key={index}
-                  className="flex flex-wrap gap-2 border-2 p-4 items-center bg-syynic-navy  justify-center mt-8"
+                  className="flex flex-wrap gap-2 rounded-2xl hover:scale-105 duration-200  border-2 p-4 items-center bg-syynic-secondary  justify-center mt-8"
                 >
                   <div className="mt-2  px-4 md:px-6 w-full">
                     <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
                       <div className="flex gap-6">
-                        <Icon size={35} className="text-synniq-blue" />
+                        <Icon size={35} className="text-synniq-primary" />
                         <h1 className="text-synniq-bg text-xl md:text-2xl">
                           {resource.title}
                         </h1>
                       </div>
 
-                      <button className="text-synniq-blue text-sm md:text-lg cursor-pointer flex items-center gap-2">
+                      <button className="text-synniq-primary text-sm md:text-lg cursor-pointer flex items-center gap-2">
                         {resource.action}
                         <AiOutlineArrowRight size={24} />
                       </button>

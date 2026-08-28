@@ -7,11 +7,8 @@
 
 @theme {
   --color-synniq-bg: #ffff;
-  --color-synniq-green: #a9c12a;
-  --color-synniq-blue:#FC7004;
-  --color-syynic-navy:#082038;
-
-  --color-synniq-cyan: #22d3ee;
+  --color-synniq-primary:#F97316;
+  --color-syynic-secondary:#082038;
   
  
 }
