@@ -80,8 +80,8 @@ export default function Header() {
                     onClick={() => setDrawerOpen(false)}
                     className={`transition-colors duration-200 ${
                       isActive
-                        ? "text-primatext-synniq-primary-400 font-semibold"
-                        : "text-white hover:text-primatext-synniq-primary-300"
+                        ? "text-synniq-primary font-semibold"
+                        : "text-white hover:text-synniq-primary"
                     }`}
                   >
                     {nav.name}

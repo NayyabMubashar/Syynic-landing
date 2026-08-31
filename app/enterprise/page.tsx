@@ -68,7 +68,7 @@ export default function Enterprise(){
               className="text-2xl md:text-4xl lg:text-6xl text-syynic-secondary"
             >
               Power your Organization <br />
-              with <span className="text-synniq-primbg-synniq-primary">Synnic Enterprise</span>
+              with <span className="text-synniq-primary">Synnic Enterprise</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 40 }}
@@ -103,21 +103,21 @@ export default function Enterprise(){
               className="flex flex-wrap mt-3 md:mt-5 lg:mt-8 gap-2 md:gap-4 lg:gap-6"
             >
               <div className="flex gap-2">
-                <CiLock className="text-synniq-primbg-synniq-primary text-xl md:text-2xl" />
+                <CiLock className="text-synniq-primary text-xl md:text-2xl" />
                 <h2 className="text-xl text-gray-600">Enterprise Security</h2>
               </div>
               <div className="flex gap-2">
-                <AiOutlineSafetyCertificate className="text-synniq-primbg-synniq-primary text-xl md:text-2xl" />
+                <AiOutlineSafetyCertificate className="text-synniq-primary text-xl md:text-2xl" />
                 <h2 className="text-xl text-gray-600">99.99% Uptime</h2>
               </div>
               <div className="flex gap-2">
-                <CiHeadphones className="text-synniq-primbg-synniq-primary text-xl md:text-2xl" />
+                <CiHeadphones className="text-synniq-primary text-xl md:text-2xl" />
                 <h2 className="text-xl text-gray-600">Deidcated Support</h2>
               </div>
-            </motion.div>
+            </motion.div> 
           </div>
           <div className="flex items-center justify-center mt-6">
-            <h1 className="text-syynic-secbg-syynic-secondary text-2xl md:text-3xl lg:text-4xl">
+            <h1 className="text-syynic-secondary text-2xl md:text-3xl lg:text-4xl">
               Everything you need to scale securely
             </h1>
           </div>
@@ -164,8 +164,8 @@ export default function Enterprise(){
                 })}
               </CarouselContent>
 
-              <CarouselPrevious className="left-0 md:-left-12 bg-syynic-secondary/20" />
-              <CarouselNext className="right-0 md:-right-12 bg-syynic-secondary/20" />
+              <CarouselPrevious className="left-0 md:-left-12 bg-syynic-secondary/40" />
+              <CarouselNext className="right-0 md:-right-12 bg-syynic-secondary/40" />
             </Carousel>
           </div>
         </div>
