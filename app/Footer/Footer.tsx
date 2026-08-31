@@ -108,7 +108,7 @@ export default function Footer() {
               <a
                 key={index}
                 href="#"
-                className="w-9 h-9 md:w-11 md:h-11 rounded-full bg-gray-800 flex items-center justify-center hover:bg-synniq-primary transition"
+                className="w-9 h-9 md:w-11 md:h-11 rounded-full bg-gray-800 flex items-center justify-center hover:bg-synniq-priary transition"
               >
                 <Icon size={18} />
               </a>

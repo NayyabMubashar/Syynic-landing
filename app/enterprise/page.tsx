@@ -65,7 +65,7 @@ export default function Enterprise(){
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.3, delay: 0.5 }}
-              className="text-2xl md:text-4xl lg:text-6xl text-syynic-secbg-syynic-secondary"
+              className="text-2xl md:text-4xl lg:text-6xl text-syynic-secondary"
             >
               Power your Organization <br />
               with <span className="text-synniq-primbg-synniq-primary">Synnic Enterprise</span>

@@ -61,7 +61,7 @@ export default function Resources(){
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.3, delay: 0.5 }}
-              className="text-syynic-secondabg-syynic-secondary text-2xl md:text-4xl lg:text-6xl font-bold "
+              className="text-syynic-secondary text-2xl md:text-4xl lg:text-6xl font-bold "
             >
               Learn Grow and stay ahead
             </motion.h1>
