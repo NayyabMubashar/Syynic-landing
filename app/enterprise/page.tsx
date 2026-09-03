@@ -65,17 +65,18 @@ export default function Enterprise(){
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.3, delay: 0.5 }}
-              className="text-2xl md:text-4xl lg:text-6xl text-syynic-secondary"
+              className="text-3xl md:text-4xl lg:text-6xl text-syynic-secondary"
             >
               Power your Organization <br />
-              with <span className="text-synniq-primary">Synnic Enterprise</span>
+              with{" "}
+              <span className="text-synniq-primary">Synnic Enterprise</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.3, delay: 0.6 }}
-              className="text-gray-800 text-xl md:text-2xl mt-3 md:mt-6"
+              className="text-gray-800 text-lg md:text-2xl lg:text-3xl mt-3 md:mt-6"
             >
               Advanced security,unlimited scale,and dedicated support
               <br /> to help your organization move faster and achieve more.
@@ -87,10 +88,10 @@ export default function Enterprise(){
               transition={{ duration: 0.3, delay: 0.9 }}
               className="flex gap-3 md:gap-6 mt-3 md:mt-6 rounded-md"
             >
-              <button className="px-2 md:px-4 py-2 md:py-3 bg-synniq-primary shadow-md rounded-md transform hover:scale-120 ease-in-out duration-200  text-white font-bold">
+              <button className="px-2 py-2 md:px-3  md:py-3 lg:px-4 lg:py-3  bg-synniq-primary shadow-md rounded-md transform hover:scale-120 ease-in-out duration-200  text-white font-bold">
                 Contact Sales
               </button>
-              <button className="px-2 md:px-4 py-2 md:py-3 bg-syynic-secondary shadow-md  rounded-md border-2 border-gray-300 transform hover:scale-120 ease-in-out duration-200  hover:bg-gray-900 text-white font-bold">
+              <button className="px-2  py-2 md:px-4 md:py-3 lg:px-4 lg:py-3 bg-syynic-secondary shadow-md  rounded-md border-2 border-gray-300 transform hover:scale-120 ease-in-out duration-200  hover:bg-gray-900 text-white font-bold">
                 Schedule a Demo
               </button>
             </motion.div>
@@ -100,7 +101,7 @@ export default function Enterprise(){
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.3, delay: 1 }}
-              className="flex flex-wrap mt-3 md:mt-5 lg:mt-8 gap-2 md:gap-4 lg:gap-6"
+              className="flex flex-wrap mt-3 md:mt-5 lg:mt-8 gap-1 md:gap-4 lg:gap-6"
             >
               <div className="flex gap-2">
                 <CiLock className="text-synniq-primary text-xl md:text-2xl" />
@@ -114,7 +115,7 @@ export default function Enterprise(){
                 <CiHeadphones className="text-synniq-primary text-xl md:text-2xl" />
                 <h2 className="text-xl text-gray-600">Deidcated Support</h2>
               </div>
-            </motion.div> 
+            </motion.div>
           </div>
           <div className="flex items-center justify-center mt-6">
             <h1 className="text-syynic-secondary text-2xl md:text-3xl lg:text-4xl">

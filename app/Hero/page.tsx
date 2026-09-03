@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const heroImages = ["/building.jpg", "/building1.jpg", "/poster.jpg"];
 
@@ -43,7 +44,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: 0.5 }}
-                    className="text-3xl lg:text-6xl font-extrabold text-white "
+                    className="text-3xl md:text-4xl lg:text-6xl font-extrabold text-white "
                   >
                     Build Automate and Scale
                   </motion.h1>
@@ -51,7 +52,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6 }}
-                    className="text-3xl lg:text-6xl text-synniq-primary font-extrabold"
+                    className="text-3xl md:text-4xl lg:text-6xl text-synniq-primary font-extrabold"
                   >
                     All in One Platform
                   </motion.span>
@@ -59,7 +60,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8 }}
-                    className="text-xl lg:text-2xl text-white"
+                    className="text-xl md:text-2xl lg:text-3xl text-white"
                   >
                     Synniq brings conversations, projects, documents,
                     <br /> and AI together so your team can move from ideas to
@@ -70,16 +71,16 @@ export default function Hero() {
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ duration: 0.4 }}
-                      className="bg-synniq-primary text-white px-3 lg:px-6 py-2 lg:py-3 mt-4  rounded-lg transform hover:scale-120 ease-in-out duration-200 font-bold hover:bg-synniq-primary/70"
+                      className="bg-synniq-primary text-white px-3 py-2 md:px-4 md:py-3 lg:px-6  lg:py-3 mt-4  rounded-lg transform hover:scale-120 ease-in-out duration-200 font-bold hover:bg-synniq-primary/70"
                     >
-                      Start Free Trial
+                    Start Free Trial
                     </motion.button>
 
                     <motion.button
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ duration: 0.4 }}
-                      className="bg-white text-synniq-primary px-3 lg:px-6 py-2 lg:py-3 mt-4  rounded-lg font-bold hover:bg-gray-200 transform hover:scale-120 ease-in-out duration-200 "
+                      className="bg-white text-synniq-primary px-3 py-2 md:px-4 md:py-3 lg:px-6  lg:py-3 mt-4  rounded-lg font-bold hover:bg-gray-200 transform hover:scale-120 ease-in-out duration-200 "
                     >
                       Get Started
                     </motion.button>

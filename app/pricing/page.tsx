@@ -13,7 +13,7 @@ export default function Pricing(){
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.3, delay: 0.5 }}
-              className="text-syynic-secondary text-3xl md:text-4xl lg:text-6xl font-bold"
+              className="text-syynic-secondary text-2xl md:text-4xl lg:text-6xl font-bold"
             >
               Choose the Plan
             </motion.h1>
@@ -31,7 +31,7 @@ export default function Pricing(){
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.3, delay: 0.9 }}
-              className="text-xl md:text-2xl lg:text-3xl text-gray-800 mt-4"
+              className="text-xl md:text-2xl lg:text-3xl text-gray-800 mt-4 text-center"
             >
               Powerful tools for individals,growing teams and large organization
             </motion.p>

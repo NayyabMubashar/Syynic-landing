@@ -64,14 +64,17 @@ export default function PricingCard() {
                 // Cards
                 <div
                   key={plan.name}
-                  className="h-auto w-70 md:h-110 md:w-100 bg-syynic-secondary p-3 md:p-6 border-2 shadow-sm rounded-4xl border-gray-400 hover:translate-2 hover:scale-110  transition delay-50 duration-300"
+                  className="w-full max-w-[300px] md:max-w-[340px] lg:max-w-[380px]   h-[450px]
+    md:h-[500px]
+ bg-syynic-secondary p-3 md:p-6 border-2 shadow-sm rounded-4xl border-gray-400 hover:translate-2 hover:scale-110  transition delay-50 duration-300"
                 >
                   <div className="flex  gap-3">
-                    <div className="w-8 h-8 md:w-12 md:h-12 lg:w-12 lg:h-12  rounded-xl bg-synniq-bg/10 flex items-center justify-center mb-5">
-                      <Icon size={35} className="text-synniq-primary" />
-                    </div>
+                    <Icon className="w-8 h-8 md:w-10 md:h-10 text-synniq-primary" />
+
                     <div>
-                      <h4 className="text-white text-xl md:text-2xl lg:text-3xl">{plan.name}</h4>
+                      <h4 className="text-white text-xl md:text-2xl lg:text-3xl">
+                        {plan.name}
+                      </h4>
                       <p className="text-xl text-gray-400">
                         {plan.description}
                       </p>
@@ -101,7 +104,9 @@ export default function PricingCard() {
                             className="text-synniq-primary"
                           />
                         </div>
-                        <p className="mt-2 tex-xs md:text-sm">{feature}</p>
+                        <p className="mt-2 tex-xs md:text-sm lg:text-lg">
+                          {feature}
+                        </p>
                       </div>
                     </div>
                   ))}
