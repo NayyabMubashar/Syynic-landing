@@ -79,7 +79,7 @@ export default function Resources(){
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.3, delay: 0.8 }}
-              className="text-gray-800 text-sm md:text-xl lg:text-2xl mt-6"
+              className="text-gray-800 text-sm md:text-xl lg:text-2xl mt-6 text-center"
             >
               Explore our libraury of guides,articles,videos and tools to help
               you buil better,work smarter and achieve more.
@@ -91,7 +91,7 @@ export default function Resources(){
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.3, delay: 1 }}
-              className="flex flex-wrap gap-2 md:gap-4 mt-2 md:mt-8"
+              className="flex flex-wrap gap-2 md:gap-4 mt-2 md:mt-8 justify-center items-center"
             >
               <button className="text-syynic-secondary border-2  shadow-lg  border-blue-950  hover:shadow-blue-950  px-4 py-2 rounded-3xl">
                 All Resources
@@ -137,15 +137,18 @@ export default function Resources(){
                           {resource.title}
                         </h1>
                       </div>
-
-                      <button className="text-synniq-primary text-sm md:text-lg cursor-pointer flex items-center gap-2">
-                        {resource.action}
-                        <AiOutlineArrowRight size={24} />
-                      </button>
                     </div>
                     <p className="md:text-xl text-lg text-gray-400 mt-4 mb-4">
                       {resource.description}
                     </p>
+
+                    {resource.action && (
+                      <button
+                        className=" text-synniq-primary text-sm md:text-lg cursor-pointer flex items-center gap-2 mt-auto lg:mt-0 self-end lg:self-auto">
+                        {resource.action}
+                        <AiOutlineArrowRight size={24} />
+                      </button>
+                    )}
                   </div>
                 </motion.div>
               );

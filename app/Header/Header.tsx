@@ -20,6 +20,7 @@ export default function Header() {
     { name: "Pricing", href: "#pricing" },
     { name: "Resources", href: "#resources" },
     { name: "Enterprise", href: "#enterprise" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (

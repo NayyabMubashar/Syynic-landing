@@ -8,6 +8,7 @@ import Resources from "./resources/page";
 import Enterprise from "./enterprise/page";
 import Footer from "./Footer/Footer";
 import Hero from "./Hero/page";
+import Contact from "./contact/page";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <Pricing />
         <Resources />
         <Enterprise />
+        <Contact/>
         <Footer />
       </div>
     </>

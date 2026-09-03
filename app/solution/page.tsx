@@ -15,7 +15,7 @@ export default function Solution() {
          whileInView={{ opacity: 1, y: 0 }}
          viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.3, delay: 0.5 }}
-          className="text-syynic-secondary text-3xl lg:text-6xl font-semibold"
+          className="text-syynic-secondary text-3xl md:text-4xl lg:text-6xl font-semibold"
         >
           Solutions built for the way
         </motion.h1>
@@ -24,7 +24,7 @@ export default function Solution() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: 0.6 }}
-          className="text-synniq-primary font-semibold text-3xl lg:text-6xl"
+          className="text-synniq-primary font-semibold text-3xl md:text-4xl lg:text-6xl"
         >
           your team works
         </motion.span>
@@ -33,7 +33,7 @@ export default function Solution() {
               whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.3 }}
           transition={{delay: 0.9 }}
-          className="text-gray-800 text-xl lg:text-2xl"
+          className="text-gray-800 text-xl md:text-2xl lg:text-3xl"
         >
           From growing startups to large organizations, Synniq helps teams
           <br />
